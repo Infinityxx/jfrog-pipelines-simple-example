@@ -2,7 +2,7 @@ resources:
   - name: shaibzGithub
     type: GitRepo
     configuration:
-      gitProvider: github
+      gitProvider: shaibzGithub
       path: infinityxx/jfrog-pipelines-simple-example
       branches:
         include: master
