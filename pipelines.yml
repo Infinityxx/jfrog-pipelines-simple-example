@@ -1,5 +1,5 @@
 resources:
-  - name: myGitRepo
+  - name: shaibzGithub
     type: GitRepo
     configuration:
       gitProvider: github
@@ -9,7 +9,7 @@ resources:
   - name: myBuildInfo
     type: BuildInfo
     configuration:
-      sourceArtifactory: aritfactorypipelines
+      sourceArtifactory: hts1artifactory
       buildName: SampleApp
       buildNumber: 1          
 pipelines:  
@@ -23,7 +23,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: myGitRepo
+            - name: shaibzGithub
           outputResources:
             - name: myBuildInfo             
         execution:
